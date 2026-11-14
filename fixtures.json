@@ -1,0 +1,32 @@
+{
+  "title": "A label is not a returned parcel",
+  "accounts": {
+    "mock-marketplace": "seller-vintage",
+    "mock-excel": "vintage"
+  },
+  "source": "mock-marketplace",
+  "rows": [
+    {
+      "id": "R1",
+      "marketplace": "A",
+      "account": "seller-vintage",
+      "carrierScan": true,
+      "labelCreated": true
+    },
+    {
+      "id": "R2",
+      "marketplace": "B",
+      "account": "seller-vintage",
+      "carrierScan": false,
+      "labelCreated": true
+    }
+  ],
+  "expected": {
+    "R1": "In transit",
+    "R2": "Pending"
+  },
+  "exception": "Buyer account blocks all worker reads until owner switches to authorized seller.",
+  "id": "vintage-returns",
+  "seed": 107,
+  "clock": "2026-11-14T12:00:00Z"
+}

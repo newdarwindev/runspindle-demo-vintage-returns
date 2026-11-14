@@ -1,0 +1,12 @@
+{
+  "headline": "A label is not a returned parcel",
+  "shots": [
+    "Fictional data and permitted account",
+    "Read selected source record",
+    "Exception: Buyer account blocks all worker reads until owner switches to authorized seller.",
+    "Fixture operator handback",
+    "Independently verified workbook result"
+  ],
+  "caption": "Fixture execution \u2022 Conceptual interface \u2022 Synthetic accounts",
+  "speakerNotes": "Show the selected account before reading. Pause at interruption. Explain the verified result, not an upstream capability claim."
+}
