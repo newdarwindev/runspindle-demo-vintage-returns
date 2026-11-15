@@ -11,3 +11,7 @@ Exception: Buyer account blocks all worker reads until owner switches to authori
 Independent expected result: {"R1": "In transit", "R2": "Pending"}
 
 From recursive parent checkout: `python tools/demo.py reset vintage-returns`, `python tools/demo.py run vintage-returns`, `python tools/demo.py record vintage-returns`.
+
+## Executable ownership
+
+`steps.cjs` owns executable business steps and source scopes; the parent browser worker injects UI-only capabilities. `assertions.py` independently derives expected outcomes and business checks; the parent verifier combines them with workbook preservation checks. `fixtures.json` and `cues.json` remain the pinned synthetic data and presentation contract.
